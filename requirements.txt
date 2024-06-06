@@ -1,0 +1,4 @@
+plaintext
+sqlite3==2.7.19
+pandas==1.4.4
+matplotlib==3.5.3
