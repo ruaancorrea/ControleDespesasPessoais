@@ -14,8 +14,7 @@ Estrutura do Código
 Importação das Bibliotecas
 Primeiramente, importamos todas as bibliotecas necessárias para o funcionamento do sistema.
 
-python
-Copiar
+
 import tkinter as tk
 from tkinter import Frame, Label, Entry, Button, ttk
 from tkcalendar import DateEntry
@@ -27,15 +26,13 @@ import pandas as pd
 Conexão com o Banco de Dados
 Estabelecemos uma conexão com o banco de dados SQLite chamado dados.db.
 
-python
-Copiar
+
 # Criando Conexão
 con = lite.connect("dados.db")
 Funções de Inserção
 Estas funções são responsáveis por inserir dados nas tabelas Categoria, Receitas e Gastos no banco de dados.
 
-python
-Copiar
+
 # Inserir Categoria
 def inserir_categoria(i):
     with con:
@@ -59,8 +56,6 @@ def inserir_gastos(i):
 Funções de Deleção
 Funções para deletar dados das tabelas Receitas, Gastos e Categoria no banco de dados.
 
-python
-Copiar
 # Deletar Receitas
 def deletar_receitas(i):
     with con:
@@ -85,8 +80,6 @@ def limpar_categorias_db(con):
 Funções para Visualizar Dados
 Funções para obter dados das tabelas Categoria, Receitas e Gastos.
 
-python
-Copiar
 # Ver Categorias
 def ver_categorias():
     lista_itens = []
@@ -122,8 +115,6 @@ def ver_gastos():
 Funções Auxiliares
 Funções auxiliares para manipulação e agregação de dados.
 
-python
-Copiar
 # Combina receitas e gastos em uma tabela única
 def tabela():
     gastos = ver_gastos()
